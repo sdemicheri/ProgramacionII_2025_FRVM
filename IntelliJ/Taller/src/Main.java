@@ -8,5 +8,10 @@ public class Main {
         Vehiculo vehiculo1 = new Vehiculo("AD251AA","Fiat");
         Vehiculo vehiculo2 = new Vehiculo("AD251BB","Fait");
         Vehiculo vehiculo3 = new Vehiculo("HJJ250","Citroen");
+
+        System.out.println(vehiculo);
+        System.out.println(vehiculo1);
+        System.out.println(vehiculo2);
+        System.out.println(vehiculo3);
     }
 }
