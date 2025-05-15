@@ -77,32 +77,34 @@ public class Super {
         System.err.println(marcasTSet);
         Producto prod = new Producto(1,"Gaseosa 1.5 lts",marca);
         
-        
+        */
         //map de marcas
-        
+    /*    
         Map<Integer, Marca> marcasMap = new HashMap<>();
-        marcasMap.put(marca.getCodigo(), marca);
-        marcasMap.put(marca1.getCodigo(), marca1);
-        marcasMap.put(marca2.getCodigo(), marca2);
-
+        marcasMap.put(1, marca);
+        marcasMap.put(2, marca1);
+        marcasMap.put(99, marca2);
+        marcasMap.put(100, new Marca(33,"nueva"));
+        
         System.out.println("Codigos de marca cargados en el map:");
         for (Map.Entry<Integer, Marca> entry : marcasMap.entrySet()) { //recorro e imprimo
-            System.out.println(entry.getKey() + " - " + entry.getValue().getNombre());
+            System.out.println(entry.getKey() + " - " + entry.getValue());
         }
-
+        
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese el codigo de la marca a buscar en el map: ");
-        codigoBuscado = scanner.nextInt();
+        int codigoBuscado = scanner.nextInt();
 
-        seleccionada = marcasMap.get(codigoBuscado); //busqueda directa, va directamente a la clave
+        Marca seleccionada = marcasMap.get(codigoBuscado); //busqueda directa, va directamente a la clave
 
         if (seleccionada != null) {
-            prod = new Producto(1, "Gaseosa 1.5 lts", seleccionada);
+            Producto prod = new Producto(1, "Gaseosa 1.5 lts", seleccionada);
             System.out.println("Producto creado: " + prod);
         } else {
             System.out.println("Marca no encontrada.");
         }
-        */
-        cargarDatosDesdeArchivo();
+      */  
+       // cargarDatosDesdeArchivo();
     }
     
     //el metodo es static porque estoy en el main

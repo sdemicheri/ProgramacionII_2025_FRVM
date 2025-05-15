@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class Cliente {
+@Entity
+public class Cliente {
 }
